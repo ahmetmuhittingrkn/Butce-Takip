@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/anasayfaFragment">
+
+    <fragment
+        android:id="@+id/anasayfaFragment"
+        android:name="com.ahmetmuhittingurkan.masraftakip.ui.fragment.AnasayfaFragment"
+        android:label="fragment_anasayfa"
+        tools:layout="@layout/fragment_anasayfa" >
+        <action
+            android:id="@+id/action_anasayfaFragment_to_gelirFragment"
+            app:destination="@id/gelirFragment" />
+        <action
+            android:id="@+id/action_anasayfaFragment_to_giderFragment"
+            app:destination="@id/giderFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/gelirFragment"
+        android:name="com.ahmetmuhittingurkan.masraftakip.ui.fragment.GelirFragment"
+        android:label="fragment_gelir"
+        tools:layout="@layout/fragment_gelir" />
+    <fragment
+        android:id="@+id/giderFragment"
+        android:name="com.ahmetmuhittingurkan.masraftakip.ui.fragment.GiderFragment"
+        android:label="fragment_gider"
+        tools:layout="@layout/fragment_gider" />
+</navigation>
